@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>HACKER OJKA</title>
-  <style>
-    body {
-      background-color: black;
-      color: lime;
-      text-align: center;
-      font-family: 'Courier New', monospace;
-      padding-top: 100px;
-    }
-    h1 {
-      font-size: 100px;
-      text-shadow: 0 0 20px lime;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Hacker Ojka</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            font-size: 80px;
+            text-shadow: 0 0 20px white;
+            animation: flicker 2s infinite;
+        }
+
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0.5;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>HACKER OJKA</h1>
+    <h1>HACKER OJKA</h1>
 </body>
 </html>
